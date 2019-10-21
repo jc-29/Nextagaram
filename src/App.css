@@ -1,0 +1,388 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  position: sticky;
+  top: 0px;
+  height: 10vh;
+}
+
+#igLogo {
+  margin: 2px 2px 0px 5px;
+  height: 6vh;
+}
+
+#websiteName {
+  font-size: 30px;
+  margin: 0px 0px 0px 0px;
+}
+
+#searchBar {
+  border-radius: 5px;
+  height: 38px;
+  border: none;
+  padding: none;
+  margin-left: 40px;
+}
+
+#searchButton {
+  margin-left: 5px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-left: 45vw;
+}
+
+.buttons-spacing {
+  margin: 0 12px;
+  color: rgb(41, 112, 153);
+}
+
+#loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#profile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 15px 20px;
+}
+
+#profile-image {
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  margin: 5px;
+  border: 3px solid white;
+}
+
+.border {
+  border: 1px solid;
+  margin: 15px 10px;
+}
+
+.user-image {
+  height: 42vh;
+  width: 42vh;
+  margin: 5px;
+}
+
+#profile-image-box {
+  width: 25vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#profile-image-box p {
+  text-align: center;
+}
+
+#user-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20vh;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(233, 233, 233);
+}
+
+#outer-user-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  align-items: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+#loader-container-mini {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 35vh;
+}
+
+#personalBox {
+  display: flex;
+  flex-direction: column;
+}
+
+#personalBio {
+  display: flex;
+  background-color: rgb(233, 233, 233);
+}
+
+#personalProfilePic {
+  width: 25vw;
+  margin: 10px 27px;
+}
+
+#personalPics {
+  width: 30vw;
+  height: 20vw;
+}
+
+#personalImagesBox {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#personalPics {
+  margin: 10px 0;
+}
+
+#personalUsername {
+  font-size: 40px;
+}
+
+#homeButton {
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+#profileLink {
+  text-decoration: none;
+  margin: 10px;
+}
+
+#userImageLoaderContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#loginLinkButton {
+  margin: 10px 10px 10px 5px;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("wood-background.jpg");
+  background-size: 100vw 100vh;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(189, 167, 142, 90%);
+  padding: 35px;
+  border-radius: 15px;
+}
+.formContainer {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+.allInputs {
+  margin: 3px 0;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.switchForms {
+  color: black;
+}
+
+#loginTitle {
+  font-size: 10vh;
+  margin-bottom: 35px;
+  background-color: rgb(189, 167, 142, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTypeName {
+  margin-bottom: 20px;
+}
+
+#submitFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(189, 167, 142, 90%);
+  border-radius: 20px;
+  margin-left: 0;
+}
+
+.removeMarginTop {
+  margin-top: 0px;
+}
+
+.removeMargin {
+  margin: 0px;
+  margin-right: 0px;
+}
+
+.consistentInputLength {
+  width: 20vw;
+}
+
+#usernameInput {
+  margin: 0px;
+}
+
+#navbarSpacing {
+  margin-left: 20px;
+}
+
+#myProfile {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: rgb(233, 233, 233);
+  padding: 10px;
+}
+
+#profileImage {
+  width: 20vw;
+}
+
+#username {
+  margin-left: 10px;
+}
+
+#uploadButtonContainer {
+  position: fixed;
+  background-color: rgb(179, 84, 179);
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  right: 40px;
+  bottom: 30px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#camera-logo {
+  height: 10vh;
+  width: 10vh;
+  position: absolute;
+}
+
+#uploadForm {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#previewContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#textContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#imageSelector {
+  align-items: center;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#imageSelector + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed;
+  cursor: pointer;
+  width: 75vw;
+  height: 63vh;
+  background-color: rgb(245, 245, 245);
+  border-radius: 15px;
+}
+
+#uploadFormGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#uploadBackground {
+  width: 10vw;
+  height: 10vw;
+}
+
+#uploadLoader {
+  position: relative;
+  height: 5vh;
+  width: 5vh;
+}
+
+#myImagesBox {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#myImages {
+  width: 30vw;
+  height: 20vw;
+  margin-bottom: 10px;
+}
