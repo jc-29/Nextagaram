@@ -386,3 +386,8 @@ ul {
   height: 20vw;
   margin-bottom: 10px;
 }
+#usernameOnHomepage {
+  color: black;
+  background: none;
+  border: none;
+}

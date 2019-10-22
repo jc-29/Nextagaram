@@ -9,11 +9,10 @@ class MyProfilePage extends React.Component {
   state = {
     images: [],
     users: [],
-    isLoaing: true
+    d: true
   };
 
   componentDidMount() {
-    console.log(this.props.loggedIn);
     const headers = {
       Authorization: `Bearer ${localStorage.getItem("jwt")}`
     };
@@ -22,7 +21,6 @@ class MyProfilePage extends React.Component {
         headers: headers
       })
       .then(result => {
-        console.log(result);
         this.setState({
           images: result.data,
           isLoading: false
@@ -36,13 +34,14 @@ class MyProfilePage extends React.Component {
   render() {
     let myData = JSON.parse(localStorage.getItem("userData"));
     const { images, isLoading } = this.state;
+    console.log(this.props.loggedIn);
     if (!this.props.loggedIn) {
       return <Redirect to="/" />;
-    } else {
-      if (isLoading) {
-        return <LoadingIndicator />;
-      }
     }
+    if (isLoading) {
+      return <LoadingIndicator />;
+    }
+
     return (
       <>
         <div id="myProfile">

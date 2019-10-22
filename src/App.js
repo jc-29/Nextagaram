@@ -13,19 +13,21 @@ import UploadButton from "./components/ButtonToUpload";
 class App extends React.Component {
   state = {
     users: [],
-    currentUser: { loggedIn: false },
+    currentUser: { loggedIn: true },
     error: "",
     setAlert: false
   };
 
   componentDidMount() {
-    console.log(this.props);
     let user = localStorage.getItem("userData");
-    console.log(user);
     if (user) {
       user = JSON.parse(user);
       this.setState({
         currentUser: { ...user, loggedIn: true }
+      });
+    } else {
+      this.setState({
+        currentUser: { loggedIn: false }
       });
     }
   }
@@ -95,6 +97,8 @@ class App extends React.Component {
 
   render() {
     console.log(this);
+    console.log(this.state.currentUser);
+
     return (
       <>
         <Navbar
@@ -124,6 +128,7 @@ class App extends React.Component {
             path="/profile"
             component={props => (
               <MyProfilePage
+                currentUser={this.state.currentUser}
                 loggedIn={this.state.currentUser.loggedIn}
                 {...props}
               />
